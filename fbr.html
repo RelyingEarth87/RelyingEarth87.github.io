@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport"  charset="utf-8">
+    <meta content="width=device-width, initial-scale=1">
+	<title>Free Bird Rats</title>
+
+    <style>
+        body {
+            background-color: transparent;
+        }
+        
+        .move {
+            position: absolute;
+        }
+    </style>
+</head>
+	
+	<body>
+    <script
+  src="https://code.jquery.com/jquery-3.6.4.slim.min.js"
+  integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw="
+  crossorigin="anonymous"></script>
+    <script>
+        var img = "freebirdratscut.gif";
+
+        var imgNum = 8;
+        for (var i = 0; i < imgNum; i++) {
+            var $image = $("<img>").attr("class", "move")
+                .attr("id", "fbr" + i)
+                .attr("src", img)
+                .css("left", screen.width*i + "px")
+                .appendTo("body");
+        };
+
+        $(".move").css("width", screen.width)
+        .css("height", screen.height);
+
+        var left0 = parseFloat($("#fbr0").css("left"));
+        var left1 = parseFloat($("#fbr1").css("left"));
+        var left2 = parseFloat($("#fbr2").css("left"));
+        var left3 = parseFloat($("#fbr3").css("left"));
+        var left4 = parseFloat($("#fbr4").css("left"));
+        var left5 = parseFloat($("#fbr5").css("left"));
+        var left6 = parseFloat($("#fbr6").css("left"));
+        var left7 = parseFloat($("#fbr7").css("left"));
+        
+
+
+        var startTime = new Date().getTime();
+
+
+       /*var moveLeft = function() {
+            var currTime = new Date().getTime();
+            var speed = 1000;
+            for (var j = 0; j < images.length; j++) {
+                var $currImage = images[j];
+                var left1 = parseFloat($currImage.css("left"));
+                var newLeft = (left1 - ((currTime - startTime)/1000) * speed);
+                $currImage.css("left", newLeft + "px");
+                console.log($currImage.css("left"));
+            }
+
+            window.requestAnimationFrame(moveLeft);
+        }; */
+
+        /*var left = [];
+        for (var i = 0; i < imgNum; i++) {
+            var leftI = parseFloat($("image" + i).css("left"));
+            left.push(leftI);
+        }*/
+
+        var moveLeft = function() {
+            var currTime = new Date().getTime();
+            var speed = 1000;
+            var newLeft0 = (left0 - ((currTime - startTime)/1000) * speed);
+            var newLeft1 = (left1 - ((currTime - startTime)/1000) * speed);
+            var newLeft2 = (left2 - ((currTime - startTime)/1000) * speed);
+            var newLeft3 = (left3 - ((currTime - startTime)/1000) * speed);
+            var newLeft4 = (left4 - ((currTime - startTime)/1000) * speed);
+            var newLeft5 = (left5 - ((currTime - startTime)/1000) * speed);
+            var newLeft6 = (left6 - ((currTime - startTime)/1000) * speed);
+            var newLeft7 = (left7 - ((currTime - startTime)/1000) * speed);
+
+            $("#fbr0").css("left", newLeft0 + "px");
+            $("#fbr1").css("left", newLeft1 + "px");
+            $("#fbr2").css("left", newLeft2 + "px");
+            $("#fbr3").css("left", newLeft3 + "px");
+            $("#fbr4").css("left", newLeft4 + "px");
+            $("#fbr5").css("left", newLeft5 + "px");
+            $("#fbr6").css("left", newLeft6 + "px");
+            $("#fbr7").css("left", newLeft7 + "px");
+
+            window.requestAnimationFrame(moveLeft);
+        }; 
+
+        moveLeft();
+    </script>
+</body>
+</html>
