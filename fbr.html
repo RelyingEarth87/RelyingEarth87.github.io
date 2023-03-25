@@ -12,6 +12,7 @@
         
         .move {
             position: absolute;
+		top: -100px;
         }
     </style>
 </head>
@@ -48,27 +49,6 @@
 
 
         var startTime = new Date().getTime();
-
-
-       /*var moveLeft = function() {
-            var currTime = new Date().getTime();
-            var speed = 1000;
-            for (var j = 0; j < images.length; j++) {
-                var $currImage = images[j];
-                var left1 = parseFloat($currImage.css("left"));
-                var newLeft = (left1 - ((currTime - startTime)/1000) * speed);
-                $currImage.css("left", newLeft + "px");
-                console.log($currImage.css("left"));
-            }
-
-            window.requestAnimationFrame(moveLeft);
-        }; */
-
-        /*var left = [];
-        for (var i = 0; i < imgNum; i++) {
-            var leftI = parseFloat($("image" + i).css("left"));
-            left.push(leftI);
-        }*/
 
         var moveLeft = function() {
             var currTime = new Date().getTime();
