@@ -1,0 +1,13 @@
+body {
+    line-height: 2;
+    /*background-color: rgb(44, 85, 209);*/
+    background-color: rgb(38, 38, 38);
+    color: rgb(190, 190, 190);
+    width: 60%;
+    position: relative;
+    left: 20%;
+}
+
+h1 {
+    text-align: center;
+}
