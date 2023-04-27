@@ -1,12 +1,25 @@
+<link rel="stylesheet" href= "E:\code\githubsite\site.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div id="topbar">
     <div id="menu">
-        <a>Home</a>
-        <a>Projects</a>
-        <a>Coding Journey</a>
+        <a target="_parent" href="https://RelyingEarth87.github.io/index.html">Home</a>
+        <a target="_parent" href="https://RelyingEarth87.github.io/projects.html">Projects</a>
+        <a target="_parent" href="https://RelyingEarth87.github.io/programming/coding-journey.html">Coding Journey</a>
     </div>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
     </a>
-    <a id="name" href="https://relyingearth87.github.io/"><img src="text"></a>
-    <a id="logo" href="https://relyingearth87.github.io/"><img src="E:\code\githubsite\logo-transparent.png"></a>
+    <a id="name" class="icon" target="_parent" href="https://relyingearth87.github.io/"><img src="E:\code\githubsite\text-logo.png"></a>
+    <a id="logo" class="icon" target="_parent" href="https://relyingearth87.github.io/"><img src="E:\code\githubsite\logo-transparent.png"></a>
 </div>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("menu");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
