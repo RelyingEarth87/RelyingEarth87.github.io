@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <?php>include("E:\code\githubsite\navbar.html");</?>
+    <?php>include("https://RelyingEarth87.github.io/navbar.html");</?>
     <div id="page">
     <div id="contents">
         <label>Table of Contents</label>
