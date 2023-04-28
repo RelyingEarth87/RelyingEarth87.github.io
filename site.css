@@ -5,6 +5,11 @@ body {
     color: rgb(190, 190, 190);
 }
 
+#contents {
+    position: relative;
+    left: 40%;
+}
+
 a {
     color: rgb(101, 148, 201)
 }
