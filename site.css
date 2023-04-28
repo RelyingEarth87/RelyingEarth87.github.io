@@ -5,6 +5,10 @@ body {
     color: rgb(190, 190, 190);
 }
 
+a {
+    color: rgb(101, 148, 201)
+}
+
 #page {
     width: 60%;
     position: relative;
