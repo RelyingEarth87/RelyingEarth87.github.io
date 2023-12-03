@@ -1,0 +1,81 @@
+body {
+    margin: 50px;
+}
+
+#name {
+    font-size: 20px;
+}
+
+#headline {
+    font-size: 18px;
+}
+
+#info p {
+    display: inline-block;
+    margin-right: 5px;
+    margin-top: 0px;
+}
+
+.sectionHead {
+    float: left;
+    font-weight: normal;
+    border-bottom: 2px solid;
+    width: 100%;
+}
+
+.locations {
+    position: relative;
+    left: 5%;
+}
+
+.skillType {
+    float: left;
+}
+
+.skills {
+    float: right;
+}
+
+#program {
+    position: relative;
+    top: -21px;
+}
+
+#software {
+    position: relative;
+    top: -21px;
+    left: -208px;
+}
+
+#languages {
+    position: relative;
+    top: -21px;
+    left: -286px;
+}
+
+#course {
+    position: relative;
+    top: -21px;
+    left: -445px;
+}
+
+#proSkills {
+    position: relative;
+    left: 50px;
+}
+
+#sofSkills {
+    position: relative;
+    left: -26px;
+}
+
+#lanSkills {
+    position: relative;
+    left: -186px;
+}
+
+#couSkills {
+    position: relative;
+    left: -366px;
+}
+
