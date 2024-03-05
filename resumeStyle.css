@@ -28,12 +28,14 @@ body {
     left: 5%;
 }
 
-.skillType {
-    float: left;
-}
+@media only screen and (min-width: 500px) {
+    .skillType {
+        float: left;
+    }
 
 .skills {
     float: right;
+}
 }
 
 #program {
@@ -41,22 +43,16 @@ body {
     top: -21px;
 }
 
-#software {
-    position: relative;
-    top: -21px;
-    left: -208px;
-}
-
 #languages {
     position: relative;
     top: -21px;
-    left: -286px;
+    left: -210px;
 }
 
 #course {
     position: relative;
     top: -21px;
-    left: -445px;
+    left: -370px;
 }
 
 #proSkills {
@@ -64,18 +60,52 @@ body {
     left: 50px;
 }
 
-#sofSkills {
+#lanSkills {
     position: relative;
     left: -26px;
 }
 
-#lanSkills {
+#couSkills {
     position: relative;
     left: -186px;
 }
 
-#couSkills {
+.title {
+    float: left;
     position: relative;
-    left: -366px;
+    top: -22px;
 }
 
+.projectDates {
+    float: center;
+    position: relative;
+    left: 10px;
+}
+
+.projectLang {
+    float: center;
+    position: relative;
+    top: -34px;
+    left: 180px;
+    
+}
+
+#Projects .description {
+    position: relative;
+    top: -30px;
+}
+
+@media only screen and (max-width: 500px) {
+    #skills h3, #skills p {
+        float: right;
+        position: relative;
+        left: 3%;
+    }
+    .projectLang {
+        float: center;
+        position:  relative;
+        top: -10%;
+    }
+    
+
+}
