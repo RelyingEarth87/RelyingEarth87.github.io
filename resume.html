@@ -30,9 +30,8 @@
     <p class="skill" id="lanSkills">Spanish, Portuguese</p>
 
     <h3 class="skillType" id="course"><strong>Relevant Coursework:</strong></h3>
-    <p class="skill" id="couSkills">Intro to Python; Web Design; Computer Science & Programming, JavaScript, Web Design, SQL courses via Khan Academy; 
-        Microsoft Excel for Business; Social Media Marketing; Rhetoric of Vision and Sound;
-         Advertising and Social Media</p>
+    <p class="skill" id="couSkills">Intro to Python; Web Design; Computer Science and Programming, JavaScript, Web Design, SQL courses via Khan Academy; 
+        Microsoft Excel for Business; Social Media Marketing; Rhetoric of Vision and Sound; Advertising and Social Media</p>
 </div>
 
 <div id="education">
@@ -98,8 +97,8 @@
     <h2 class="sectionHead">Projects</h2>
 
     <h3 class="title"><strong>Pokemon Go Form Filler</strong></h3>
-    <h2 class = "projectDates">Mar. 2019</h2>
-    <h2 class="projectLang">Python</h2>
+    <p class = "projectDates">Mar. 2019 - Mar. 2019</p>
+    <p class="projectLang">Python</p>
     <ul class="description">
         <li>Automated Python script that asks the user a few questions in order to streamline data collection. Form uses responses to extrapolate data, 
             fill out, and submit a Google form in an attempt to discover frequency of individual values of Pokemon Go spawns.</li>
@@ -108,8 +107,8 @@
     
 
     <h3 class="title"><strong>Pokemon Go Data Scrubber</strong></h3>
-    <h2 class = "projectDates">Sept. 2019 - Dec. 2019</h2>
-    <h2 class="projectLang">Python</h2>
+    <p class = "projectDates">Sept. 2019 - Dec. 2019</p>
+    <p class="projectLang">Python</p>
     <ul class="description">
         <li>Wrote script to scrape Pokemon Go tournament data website to count the frequency with which specific pokemon were used in PvP tournaments in order to 
             analyze the specific meta used in those tournaments</li>
@@ -119,16 +118,16 @@
     </ul>
 
     <h3 class="title"><strong>Discord Bot</strong></h3>
-    <h2 class = "projectDates">Sept. 2020 - Nov. 2021</h2>
-    <h2 class="projectLang">Python</h2>
+    <p class = "projectDates">Sept. 2020 - Nov. 2021</p>
+    <p class="projectLang">Python</p>
     <ul class="description">
         <li>Python based bot used in a private Discord server that checks defined channels for activity, reactions, responds to commands, and attempts to detect profanity.</li>
         <li>Learned applications of Discord API, integration of community-made libraries into personal code. Experience allowed me to create, and provided better understanding of, bots and server hosting.</li>
     </ul>
 
     <h3 class="title"><strong>Truth or Drink Game</strong></h3>
-    <h2 class = "projectDates">Mar. 2022 - April 2022</h2>
-    <h2 class="projectLang">Python</h2>
+    <p class = "projectDates">Mar. 2022 - April 2022</p>
+    <p class="projectLang">Python</p>
     <ul class="description">
         <li>Playable version of a game where a person has to answer a question, if they refuse, they must take a drink, and at the end, a score is given and a winner crowned. 
             Written in Python and packaged to run as a Windows executable (.exe) file.</li>
@@ -136,16 +135,16 @@
     </ul>
 
     <h3 class="title"><strong>Twitch Overlay</strong></h3>
-    <h2 class = "projectDates">Mar. 2023</h2>
-    <h2 class="projectLang">HTML, CSS, JavaScript</h2>
+    <p class = "projectDates">Mar. 2023 - Mar. 2023</p>
+    <p class="projectLang">HTML, CSS, JavaScript</p>
     <ul class="description">
         <li>Animated web page that functions as a source to be used in the OBS application for use in Twitch streams to facilitate interaction with the streamer.</li>
         <li>Learned animations and time scales inside of HTML documents. Learned about jQuery library and how to identify and pick out elements in HTML.</li>
     </ul>
 
-    <h3 class="title"><strong><a href="https://relyingearth87.github.io/">Portfolio Website</a></strong></h3>
-    <h2 class = "projectDates">Mar. 2023 - Present</h2>
-    <h2 class="projectLang">HTML, CSS, JavaScript</h2>
+    <h3 class="title"><strong>Portfolio Website</strong></h3>
+    <p class = "projectDates">Mar. 2023 - Present</p>
+    <p class="projectLang">HTML, CSS, JavaScript</p>
     <ul class="description">
         <li>Website created through GitHub from scratch in HTML/CSS/JavaScript to be used as a portfolio and repository for programming projects as well as a 
             display of skills and abilities.</li>
@@ -154,8 +153,8 @@
     </ul>
 
     <h3 class="title"><strong>Timezone Discord Converter</strong></h3>
-    <h2 class = "projectDates">Mar. 2023 - September 2023</h2>
-    <h2 class="projectLang">HTML, CSS, JavaScript</h2>
+    <p class = "projectDates">Mar. 2023 - Sept. 2023</p>
+    <p class="projectLang">HTML, CSS, JavaScript</p>
     <ul class="description">
         <li>Takes text input from a user and converts time references into a Unix timestamp (usable by Discord) to display message timestamps in the user's local time.</li>
         <li>Learned how to do Natural Language Processing in JavaScript, more advanced JavaScript rules and methods, and how to use RegEx (in order to filter out text and save it for later use). 
@@ -163,8 +162,8 @@
     </ul>
     
     <h3 class="title"><strong>Advent of Code 2023</strong></h3>
-    <h2 class = "projectDates">Dec. 2023 - Jan 2024</h2>
-    <h2 class="projectLang">Python</h2>
+    <p class = "projectDates">Dec. 2023 - Jan 2024</p>
+    <p class="projectLang">Python</p>
     <ul class="description">
         <li>Worked on and solved 2 coding challenges per day that involved processing large sets of data in order to get a working program and advance.</li>
         <li>Learned more about processing input data, how to work with large sets of data to limit time complexities, and learned the numpy library as well as several mathematical concepts.</li>
@@ -178,10 +177,31 @@
 
 <script>
     let $info = $("#info").contents();
-    let $text = $("#info").contents().text();
+    let $text = $info.contents().text();
     for (var i = 2; i < $info.length -1; i+=2) {
         $info[i].before("|  ");
     }
+
+    let $dates = $(".projectDates");
+    let $langs = $(".projectLang");
+
+    for (var i = 0; i < $dates.length; i++) {
+        var $date = $dates[i];
+        console.log(i);
+        console.log($date);
+        var $dateText = $date.text();
+        
+        if ("-" in $dateText) {
+            var $lang = $langs[i];
+            var currLeft = $lang.css("left")
+            var currLeft = currLeft.substring(0, currLeft.length-2);
+            var newLeft = currLeft += 70;
+            $lang.css("left", currLeft += "px");
+        }
+    }
+
+    
+    
 </script>
 
 </body>
