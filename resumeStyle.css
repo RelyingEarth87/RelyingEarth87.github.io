@@ -260,3 +260,38 @@ body {
     }
 
 }
+
+@media print {
+    #program, #languages {
+        float: left;
+    }
+
+    #lanSkills {
+        position: relative;
+        top: -0px;
+        left: -110px;
+    }
+
+    #course {
+        position: relative;
+        top: 0px;
+    }
+
+    #couSkills {
+        width: 50%;
+        overflow-wrap: break-word;
+        position: relative;
+        top: -38px;
+        left: 258px;
+    }
+
+    #Education, #Experience, #Projects {
+        position: relative;
+        top: -38px;
+    }
+
+    #moveDown {
+        position: relative;
+        top: 100px;
+    }
+}
